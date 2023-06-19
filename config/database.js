@@ -14,3 +14,7 @@ const connectDatabase = () => {
 
 // module.exports = connectDatabase
 module.exports = connectDatabase;
+
+// ,
+//     "dev": "nodemon server.js",
+//     "test": "echo \"Error: no test specified\" && exit 1"
