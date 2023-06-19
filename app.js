@@ -14,7 +14,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 }
 
 app.use(cors());
-app.options("*", cors());
+// app.options("*", cors());
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
