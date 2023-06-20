@@ -13,11 +13,18 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   require("dotenv").config({ path: "backend/config/config.env" });
 }
 
+// const corsOptions = {
+//   origin: "*",
+//   // origin: true,
+//   credentials: true, //access-control-allow-credentials:true
+//   optionSuccessStatus: 200,
+// };
+
+// app.use(cors(corsOptions));
+
 const corsOptions = {
-  origin: "*",
-  // origin: true,
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
+  origin: "https://ecommerce-store-v1.netlify.app",
+  credentials: true,
 };
 
 app.use(cors(corsOptions));
