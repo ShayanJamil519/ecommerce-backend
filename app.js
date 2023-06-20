@@ -14,8 +14,8 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 }
 
 const corsOptions = {
-  // origin:'*',
-  origin: true,
+  origin: "*",
+  // origin: true,
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
